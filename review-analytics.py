@@ -14,3 +14,9 @@ for line in data:
     sum_len += length
 print('留言平均長度',sum_len / len(data))
 
+
+new = []
+for d in data :
+    if len(d) < 100:
+        new.append(d)
+print('留言長度小於100有',len(new))
